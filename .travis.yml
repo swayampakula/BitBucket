@@ -1,4 +1,8 @@
 language: node_js
 node_js:
   - "stable"
-script : gulp travis
+scripts: {
+    build: "node ./node_modules/webpack/bin/webpack.js",
+    serv: "node server.js",
+    lint: "gulp lint"
+}

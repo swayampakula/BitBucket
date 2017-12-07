@@ -16,3 +16,7 @@ gulp.task('htmlhint', function() {
   .pipe(htmlhint({htmlhintrc: '.htmlhintrc'}))
   .pipe(htmlhint.failReporter());
 });
+
+gulp.task('travis', ['build', 'testServerJS'], function(){
+	process.exit(0);
+});

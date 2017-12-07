@@ -8,7 +8,7 @@ scripts: {
     build: "node ./node_modules/webpack/bin/webpack.js",
     serv: "node server.js",
     lint: "gulp lint",
-    start: " -sonar-scanner"
+    start: "-sonar-scanner"
 }
 
 addons:

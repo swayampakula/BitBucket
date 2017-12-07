@@ -6,3 +6,8 @@ scripts: {
     serv: "node server.js",
     lint: "gulp lint"
 }
+
+addons:
+  sauce_connect:
+    username: "ramesh.n1995"
+    access_key: "bea84274-bfe3-41a1-bc74-e9307b1823db"

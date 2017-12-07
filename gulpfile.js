@@ -17,6 +17,6 @@ gulp.task('htmlhint', function() {
   .pipe(htmlhint.failReporter());
 });
 
-gulp.task('travis', ['serv', ], function(){
+gulp.task('travis', ['serv'], function(){
 	process.exit(0);
 });

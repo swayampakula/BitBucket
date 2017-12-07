@@ -1,13 +1,22 @@
+dist: trusty
+sudo: required
+
 language: node_js
 node_js:
   - "stable"
 scripts: {
     build: "node ./node_modules/webpack/bin/webpack.js",
     serv: "node server.js",
-    lint: "gulp lint"
+    lint: "gulp lint",
+    start: " -sonar-scanner"
 }
 
 addons:
   sauce_connect:
     username: "ramesh.n1995"
     access_key: "bea84274-bfe3-41a1-bc74-e9307b1823db"
+
+    sonarcloud:
+    organization: "swayampakula"
+    token:
+      secure: "swayampakula-github"
